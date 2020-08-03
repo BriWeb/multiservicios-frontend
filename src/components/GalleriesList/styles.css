@@ -1,0 +1,7 @@
+.galleriesList{
+    width: 100%;
+    background-color: #2a3031;
+    min-height: 100vh;
+    overflow: hidden;
+    padding-top: 80px;
+}

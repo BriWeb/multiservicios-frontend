@@ -1,0 +1,44 @@
+.icon{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 4em;
+    /* font-size: .9rem; */
+    font-size: 14px;
+    text-align: center;
+    margin: 4px 2px;
+}
+.icon__img{
+    font-size: 2em;
+}
+.icon__paragraph{
+    color: white;
+    background-color: #2d34369a;
+    border-radius: 12px;
+}
+
+@media screen and (max-height: 500px){
+    .icon{
+        margin-bottom: .1em;
+    }
+}
+
+@media screen and (min-width: 500px){
+    .icon{
+        margin: 4px 8px;
+    }
+}
+
+@media screen and (min-width: 768px){
+   .icon{
+       font-size: 15px;
+   } 
+}
+
+@media screen and (min-width: 1200px){
+    .icon{
+        margin: 4px 25px;
+    } 
+ }

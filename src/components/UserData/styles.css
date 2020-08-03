@@ -1,0 +1,25 @@
+.data{
+    color: white;
+    padding: 10px 25px;
+    background-color: #2d34369a;
+    font-size: 14px;
+    animation: dataOpacity 1.3s ease-in;
+}
+@keyframes dataOpacity{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.data__paragraph{
+    white-space: pre-wrap;
+}
+
+@media screen and (min-width : 768px){
+    .data{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,116 @@
+.message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    overflow: hidden;
+    background-color: #dcdde1;
+    box-shadow: 10px 10px 5px black;
+    color: #192a56;
+    width: 95%;
+    padding: 10px;
+}
+.message__fields{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.message__message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message__names,
+.message__location,
+.message__phone,
+.message__email,
+.message__time,
+.message__date{
+font-weight: bold;
+color: rgb(139, 45, 45);
+}
+.message__text{
+    margin: 10px 10px;
+    background-color: #c9cbd1;
+    border: 1px dotted black;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.message__photos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.message__read{
+    display: flex;
+    align-items: center;
+}
+.message__buttons{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.message__btn-delete{
+    border-style: none;
+    font-size: 16px;
+    background-color: crimson;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+}
+.message__label,
+.message__checkbox{
+    cursor: pointer;
+}
+.message__checkbox{
+    margin-left: 3px;
+}
+
+.message__label span{
+    font-weight: bold;
+}
+@media screen and (min-width: 768px){
+    .message__fields{
+        width: 80%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .message__fields p {
+        margin: 8px 0;
+    }
+    .message__btn-delete{
+        padding: 12px;
+    }
+    .message{
+        margin: 50px auto;
+    }
+}
+@media screen and (min-width: 1024px){
+    .message{
+        width: 966px;
+    }
+    .message__btn-delete:hover{
+        transition: transform .3s;
+        transform: scale(1.2);
+    }
+    .message__checkbox:hover{
+        transition: transform .3s;
+        transform: scale(1.6);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .message{
+        margin: 60px auto;
+    }
+}

@@ -1,0 +1,32 @@
+.avatar-img{
+    border-radius: 50%;
+    border: 3px solid white;
+    width: 140px;
+    height: 140px;
+    animation: toRight .6s ease-in;
+    object-fit: fill;
+    cursor: pointer;
+}
+
+@keyframes toRight {
+    0%{
+        transform: translateX(calc(-50vw - 50%));
+    }
+    100%{
+        transform: translateX(1);
+    }
+}
+
+@media screen and (min-width: 768px){
+    .avatar-img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .avatar-img{
+        width: 250px;
+        height: 250px;
+    }
+}

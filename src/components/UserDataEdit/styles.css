@@ -1,0 +1,132 @@
+.form-edit{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-edit__avatar-container,
+.form-edit__wallpaper-container,
+.form-edit__info-container{
+    width: 97%;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #dcdde1;
+    box-shadow: 10px 10px 5px black;
+}
+.form-edit__label{
+    border: 1.5px dashed #192a56;
+    border-radius: 1rem;
+    margin: 1rem 0px;
+    padding: .3rem;
+    width: 60%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.form-edit__title{
+    color: #192a56;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    /* font-size: 1.1rem; */
+    font-size: 1.1rem;
+}
+
+.form-edit__input{
+    display: none;
+}
+
+.form-edit__date-container,
+.form-edit__name-container,
+.form-edit__description-container{
+    margin-bottom: 20px;
+}
+.form-edit__date-container{
+    width: 99%;
+}
+
+.form-edit__date,
+.form-edit__name,
+.form-edit__description{
+    font-size: 14px;
+}
+.form-edit__date{
+    width: 100%;
+    resize: none;
+    height: 200px;
+    padding: 10px 8px;
+}
+.form-edit__wallpaper{
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.form-edit__messageUpdateOK{
+    color:#27ae60;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.form-edit__messageUpdateNOT{
+    color:#27ae60;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.form-edit__button {
+    text-transform: uppercase;
+    cursor: pointer;
+    display: block;
+    padding: 8px;
+    background-color:#192a56;
+    color: #dcdde1;
+    border: none;
+    border-radius: 2rem;
+    transition: transform .3s;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+
+@media screen and (min-width: 768px){
+    .form-edit__date,
+    .form-edit__name,
+    .form-edit__description{
+        font-size: 15px;
+    }
+    .form-edit__avatar-container{
+        width: 740px;
+    }
+    .form-edit__label{
+        width: 50%;
+    }
+    .form-edit__button{
+        padding: 12px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .form-edit__label{
+        width: 40%;
+    }
+    .form-edit__button:hover{
+        transform: scale(1.2);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .form-edit__label{
+        width: 30%;
+    }
+}
